@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+
+<div class='bold-line'></div>
+<div class='container'>
+
+    <link rel="stylesheet" href="~/miniblog/fonts/icomoon/StyleSheet1.css">
+
+    <div class='window'>
+        <div class='overlay'></div>
+
+        <div class='content'>
+            <div class='welcome'>Hoşgeldiniz</div>
+            <div class='subtitle'>Giriş Yapmak için Lütfen hesabınız giriniz</div>
+
+            <div class='input-fields'>
+                @using (Html.BeginForm("AuthorLogin", "Login", FormMethod.Post))
+                {
+                    <input type='text' placeholder='Username' name="Mail" class='input-line full-width' />
+
+                    <input type='password' placeholder='Password' name="Password" class='input-line full-width' />
+                    <button class='ghost-round full-width' type="submit">Giriş Yap</button>
+                }
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
